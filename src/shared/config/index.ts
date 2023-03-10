@@ -1,5 +1,7 @@
 import {routerConfig} from './routerConfig/routerConfig';
+import {data} from './channelData/channelData';
 
 export {
-    routerConfig
+    routerConfig,
+    data as channelData
 };

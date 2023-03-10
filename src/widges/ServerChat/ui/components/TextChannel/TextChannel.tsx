@@ -1,8 +1,8 @@
 import React, {FC, useState} from 'react';
-import {ICategory} from '../../ServerChat';
 import {Stack, Typography} from '@mui/material';
 import {ReactComponent as Arrow} from 'shared/assets/icons/arrow.svg';
 import {ReactComponent as Hashtag} from 'shared/assets/icons/hash.svg';
+import {ICategory} from 'shared/config/channelData/channelData';
 
 interface TextChannelProps {
     data: ICategory;
