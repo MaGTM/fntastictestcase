@@ -1,0 +1,68 @@
+.Title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: var(--font-color-main);
+  position: relative;
+
+  #arrow {
+    transform: rotate(-90deg);
+    height: 20px;
+    width: 20px;
+    fill: var(--font-color-main);
+    transition: all var(--animation-time) ease;
+
+    &.active {
+      transform: rotate(-270deg);
+    }
+  }
+
+  .settings {
+    animation: var(--animation-time) fadeOut forwards;
+
+    &.active {
+      animation: var(--animation-time) fadeIn forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        z-index: 100;
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      99.9% {
+        opacity: 0;
+      }
+      100% {
+        z-index: -1;
+      }
+    }
+  }
+
+  .setting {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    p {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      background-color: var(--blue-color);
+    }
+  }
+}
