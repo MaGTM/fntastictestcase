@@ -11,7 +11,7 @@ import {ReactComponent as Help} from 'shared/assets/icons/help.svg';
 const Settings = () => {
     return (
         <Stack className={s.Settings} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'}>
-            <Stack flexDirection={'row'} alignItems={'center'}>
+            <Stack flexDirection={'row'} alignItems={'center'} ml={1}>
                 <Hashtag width={20} height={20} stroke={'var(--font-color-main)'}/>
                 <Typography variant={'h4'} color={'var(--font-color-main)'} ml={1}>welcome</Typography>
             </Stack>
@@ -50,6 +50,9 @@ const Settings = () => {
                         '& label': {
                             color: 'var(--font-color-main)',
                         },
+                        '& .MuiOutlinedInput-input': {
+                            color: 'var(--font-color-main)',
+                        }
                     }}
                 />
                 <Stack flexDirection={'row'} gap={1}>
