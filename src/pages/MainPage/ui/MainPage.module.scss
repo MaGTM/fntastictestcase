@@ -1,7 +1,12 @@
 .MainPage {
-  display: flex;
+  display: grid;
   max-height: 100vh;
   height: 100vh;
   background-color: var(--bg-color-chat);
   overflow-y: hidden;
+  grid-template-areas:
+  'header header header'
+  'sidebar chat members';
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 300px 1fr 300px;
 }

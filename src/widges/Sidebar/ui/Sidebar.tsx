@@ -60,6 +60,7 @@ const Sidebar = () => {
                                 title={item.title}
                                 arrow
                                 placement={'right'}
+                                key={item.id}
                             >
                                 <Badge
                                     badgeContent={item.badgeContent}
